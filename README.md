@@ -1,7 +1,7 @@
 # Professional-Readme-Generator
 
 ## Description
-The purpose of the project was to use node.js along with inquirer to create a program that could generate professional readme's
+The purpose of the project was to use node.js along with inquirer to create an application that could dynamically generate professional readme's from user input. 
 
 ## Table of Contents
   - [Installation](#installation)
@@ -10,18 +10,19 @@ The purpose of the project was to use node.js along with inquirer to create a pr
   - [License](#license)
   
 ## Installation
-N/A
+After cloning the repository, run the command npm i to install the necessary dependencies. Next run the application using the command node index.js.
 
 ## Usage
+While using the application, the user will be prompted with various questions about their project. After answering all applicable questions the Readme.md file will be generated along with a message confirming this in the terminal.
 
-![screenshot.png](assets/images/screenshot.png)
+![Here is a walkthrough](https://drive.google.com/file/d/1z5zvVlsZCDZ0maeycKIcLF8dCsfYw20_/view?usp=sharing)
 
 ## Credits   
 
 N/A
  
 ## License
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 
 ## Tests
 
