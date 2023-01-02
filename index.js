@@ -101,3 +101,24 @@ const questions = () => {
   ])
 };
 
+// Function to initialize app
+function init() {
+  questions()
+  .then((inquirerRepsonse) => {
+    console.log(inquirerRepsonse)
+    fs.writeFile('ReadMe.md', generateMarkdown(inquirerRepsonse), err => {
+      if (err) {
+        console.error(err);
+      }
+      // file written successfully
+    });
+    console.log("ReadMe was successfully created!");
+  })
+  .catch((err) => {
+    console.log(err);
+  })
+}
+
+
+// Function call to initialize app
+init();
