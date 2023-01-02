@@ -71,6 +71,12 @@ const questions = () => {
       name: `credits`
   },
   {
+    type: "checkbox",
+    message: "What License did you use for this repository?",
+    choices: ["Boost Software License 1.0", "MIT", "Mozilla Public License 2.0", "GNU General Public License 2.0", "Apache License 2.0", "GNU General Public License 3.0"],
+    name: "license",
+  },
+  {
       type: `input`,
       message: `Please provide any instructions for testing.`,
       name: `tests`
@@ -93,11 +99,6 @@ const questions = () => {
       message: `Please enter your email.`,
       name: `email`
   },
-  {
-      type: `input`,
-      message: `Please enter intructions for contacting.`,
-      name: `contactMe`
-  },
   ])
 };
 
@@ -105,7 +106,6 @@ const questions = () => {
 function init() {
   questions()
   .then((inquirerRepsonse) => {
-    console.log(inquirerRepsonse)
     fs.writeFile('ReadMe.md', generateMarkdown(inquirerRepsonse), err => {
       if (err) {
         console.error(err);
