@@ -1,4 +1,4 @@
-# Professiona-Readme-Generator
+# Professional-Readme-Generator
 
 ## Description
 The purpose of the project was to use node.js along with inquirer to create a program that could generate professional readme's
